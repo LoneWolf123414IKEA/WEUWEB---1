@@ -1,0 +1,18 @@
+body{
+    background-color: #000000;
+    color: #a2a2a2
+    font-family: 'Times New Roman', Times, serif;
+}
+
+a{
+    color:#b2b2ff
+}
+
+a:hover{
+    color: #ffb2b2
+}
+
+li > a{
+    color:#a2a2a2
+    text-decoration: none;
+}
