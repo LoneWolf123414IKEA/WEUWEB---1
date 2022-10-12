@@ -4,6 +4,20 @@ body{
     font-family: 'Times New Roman', Times, serif;
     display: grid;
     grid-template-columns: 1fr 1fr 20vw;
+    grid-template-rows: 15vh 80vh 50px;
+    grid-template-areas: 
+    "header header nav"
+    "main main main"
+    "footer footer footer";
+    margin: 0px;
+}
+
+#media{
+    background-color: #5f5f55;
+    color: #b2b2b2;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 20vw;
     grid-template-rows: 15vh auto 50px;
     grid-template-areas: 
     "header header nav"
