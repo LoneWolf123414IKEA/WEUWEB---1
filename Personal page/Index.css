@@ -30,10 +30,29 @@ body{
     margin: 0px;
 }
 
-header{
-    grid-area: header;  
+#names{
+    background-color: #5f5f55;
+    color: #b2b2b2;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 20vw;
+    grid-template-rows: 15vh auto 50px;
+    grid-template-areas: 
+    "header header nav"
+    "main main main"
+    "footer footer footer";
+    margin: 0px;
 }
 
+header{
+    grid-area: header;  
+    background-color: #1f2f2f;
+    border-style:ridge;
+    margin:8px;
+}
+h1{
+    margin:8px;
+}
 nav{
     grid-area: nav;
     background-color: #ff3232;
@@ -77,4 +96,25 @@ li > a{
 
 #media img{
     height: 30vh;
+}
+
+tr:first-of-type > :nth-child(even){
+    background-color: #2f2f1f;
+}
+
+tr:first-of-type > :nth-child(odd){
+    background-color: #1f1f2f;
+}
+
+tr:nth-child(even) > th{
+    background-color: #2f2f1f;
+}
+
+tr:nth-child(odd) > th{
+    background-color: #1f1f2f;
+}
+
+td, th{
+    border:1px #a2a2a2 double;
+    border-collapse: collapse;
 }
