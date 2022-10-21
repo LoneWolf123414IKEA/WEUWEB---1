@@ -1,3 +1,4 @@
+/*three different bodys mainly bc of the footer and that the media page needed more columns*/
 body{
     background-color: #5f5f55;
     color: #b2b2b2;
@@ -10,10 +11,6 @@ body{
     "main main main"
     "footer footer footer";
     margin: 0px;
-}
-
-.novis{
-    color:#5f5f55;
 }
 
 #media{
@@ -43,16 +40,18 @@ body{
     "footer footer footer";
     margin: 0px;
 }
-
+/*styling for the header, nav, main, and footer*/
 header{
     grid-area: header;  
     background-color: #1f2f2f;
     border-style:ridge;
     margin:8px;
 }
+
 h1{
     margin:8px;
 }
+
 nav{
     grid-area: nav;
     background-color: #ff3232;
@@ -60,11 +59,22 @@ nav{
     margin:8px;
 }
 
+li > a{
+    color:#a2a2a2;
+    text-decoration: none; 
+}
+
 main{
     grid-area: main;
     margin-left: 8px;
 }
 
+footer{
+    grid-area: footer;
+    background-color: #000000;
+    border-style:outset none none none;
+}
+/*creating the two divisions for the media page and formatting the image size for the page*/
 .music{
     grid-area: music;
     margin-left: 8px;
@@ -75,12 +85,10 @@ main{
     margin-left: 8px;
 }
 
-footer{
-    grid-area: footer;
-    background-color: #000000;
-    border-style:outset none none none;
+#media img{
+    height: 30vh;
 }
-
+/*making the links less prominent and easier on the eyes*/
 a{
     color:#b2b2ff
 }
@@ -88,16 +96,7 @@ a{
 a:hover{
     color: #ffb2b2
 }
-
-li > a{
-    color:#a2a2a2
-    text-decoration: none;
-}
-
-#media img{
-    height: 30vh;
-}
-
+/*Styling for the tables, */
 tr:first-of-type > :nth-child(even){
     background-color: #2f2f1f;
 }
