@@ -57,19 +57,46 @@ nav{
     background-color: #ff3232;
     border-style:ridge;
     margin:8px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 5% 30% 30% 30% 5%;
+    grid-template-areas: 
+    "filler"
+    "home"
+    "who"
+    "media"
+    "projects"
+    "filler";
 }
 
-nav > li{
+nav li{
+    list-style-type:none;
     border-style:inset;
-    margin:3px;
+    background-color:#000000;
+    margin-right:40px;
+    height:30%;
 }
 
-nav > li:hover{
-    transform:scale(1.5);
+.home{
+    grid-area:home;
+}
+
+.who{
+    grid-area:home;
+}
+
+.media{
+    grid-area:media;
+}
+
+.projects{
+    grid-area:projects;
+}
 
 li > a{
     color:#a2a2a2;
+    
     text-decoration: none; 
+    
 }
 
 main{
@@ -124,4 +151,11 @@ tr:nth-child(odd) > th{
 td, th{
     border:1px #a2a2a2 double;
     border-collapse: collapse;
+    text-align:center;
+}
+
+td:hover{
+    transform:scale(2, 2);
+    background-color: #000000;
+    color:#aa0000;
 }
