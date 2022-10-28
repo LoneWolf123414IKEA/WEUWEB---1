@@ -1,11 +1,11 @@
-/*three different bodys mainly bc of the footer and that the media page needed more columns*/
+/*two different bodys bc the media page needed more columns*/
 body{
     background-color: #5f5f55;
     color: #b2b2b2;
     font-family: 'Times New Roman', Times, serif;
     display: grid;
-    grid-template-columns: 1fr 1fr 20vw;
-    grid-template-rows: 15vh 80vh 50px;
+    grid-template-columns: 1fr 1fr 250px;
+    grid-template-rows: 150px  50px;
     grid-template-areas: 
     "header header nav"
     "main main main"
@@ -18,8 +18,8 @@ body{
     color: #b2b2b2;
     font-family: 'Times New Roman', Times, serif;
     display: grid;
-    grid-template-columns: 1fr 1fr 20vw;
-    grid-template-rows: 15vh auto 50px;
+    grid-template-columns: 1fr 1fr 250px;
+    grid-template-rows: 150px auto 50px;
     grid-template-areas: 
     "header header nav"
     "music movies main"
@@ -27,19 +27,6 @@ body{
     margin: 0px;
 }
 
-#names{
-    background-color: #5f5f55;
-    color: #b2b2b2;
-    font-family: 'Times New Roman', Times, serif;
-    display: grid;
-    grid-template-columns: 1fr 1fr 20vw;
-    grid-template-rows: 15vh auto 50px;
-    grid-template-areas: 
-    "header header nav"
-    "main main main"
-    "footer footer footer";
-    margin: 0px;
-}
 /*styling for the header, nav, main, and footer*/
 header{
     grid-area: header;  
@@ -108,6 +95,9 @@ footer{
     grid-area: footer;
     background-color: #000000;
     border-style:outset none none none;
+    bottom: 0;
+    position:fixed;
+    width: 100vw;
 }
 /*creating the two divisions for the media page and formatting the image size for the page*/
 .music{
