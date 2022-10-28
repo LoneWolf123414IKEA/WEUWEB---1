@@ -1,0 +1,11 @@
+li{
+    list-style-type:decimal;
+}
+
+ol > ol > li{
+    list-style-type:lower-latin;
+}
+
+ol > ol > ol > li{
+    list-style-type:lower-roman;
+}
