@@ -1,35 +1,17 @@
 body{
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
+    grid-template-columns: auto 95vh auto;
+    grid-template-rows: 1fr;
     grid-template-areas: 
-    "rd blu"
-    "grn ylo";
-    margin: 0px;
-    width: 100w;
-    height: 100vh;
-}
-
-#rd{
-    grid-area: rd;
-    background-color: #ff0000;
-}
-
-#blu{
-    grid-area: blu;
+    "1 2 3";
     background-color: #0000ff;
+    margin: 0px;
 }
 
-#grn{
-    grid-area: grn;
-    background-color: #00ff00;
-}
-
-#ylo{
-    grid-area: ylo;
-    background-color: #ffff00;
-}
-
-h1 {
-    font-size: 3vw;
+main{
+    border-radius: 47.5vw;
+    width: 95vh;
+    height: 95vh;
+    background-color: #00ffff;
+    margin: 0px;
 }
