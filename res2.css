@@ -1,17 +1,15 @@
+/* CSS styles */
 body{
-    display: grid;
-    grid-template-columns: auto 95vh auto;
-    grid-template-rows: 1fr;
-    grid-template-areas: 
-    "1 2 3";
     background-color: #0000ff;
     margin: 0px;
 }
 
 main{
-    border-radius: 47.5vw;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 47.5vh;
     width: 95vh;
     height: 95vh;
-    background-color: #00ffff;
+    background-color: #ffff00;
     margin: 0px;
 }
