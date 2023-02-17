@@ -3,89 +3,98 @@
     <head>
         <meta charset="utf-8">
         <title>form</title>
-        <link rel="stylesheet" href="advlist.css">
+        <link rel="stylesheet" href="form.css">
     </head>
     <body>
         <header>
             <h1>form test thingymajigck</h1>
         </header>
-        <form action="advlist.html" method="get">
-            <fieldset>
-                <p>
-                    <label for="nam">EYYO?? what yo pref name m8!??</label>
-                    <input type="text" name="nam" id="nam" required>
-                </p>
-                <p>
-                    <label for="lastnm">and what do yo ppl be clld?!??</label>
-                    <input type="text" name="lastnm" id="lastnm" required>
-                </p>
-                <p>
-                    <label for="mail">i'd like that mail yo got ther to</label>
-                    <input type="email" name="mail" id="mail" required>
-                </p>
-                <p>
-                    <label for="gndr">yanno, tht thng wher society liks gendrr? what do yo one be? dnt Evn need on<br></label>
-                    <input type="file" accept=".txt .exe .png .svg .html .cs .rtf .xml .pdf .doc .docx audio/*" id="gndr">
-                </p>
-                <p>
-                    <label for="pss">oh n yo do want to protecc diz data wit a psswrd!</label>
-                    <input type="password" name="pss" id="pss" required>
-                </p>
-            </fieldset>
-            <fieldset>
-                <p>
-                    <label for="date">yo! you thr???? ye yo ritin diz form, do ya Celebrate zom date ye??<br></label>
-                    <input type="date" name="date" id="date" required>
-                </p>
-                <p>
-                    <label for="tim">also, werd questn but, Wat yo fav time of day???<br></label>
-                    <input type="time" name="tim" id="tim" required>
-                </p>
-                <p>
-                    <legend>doya lik lik sum kind off genre in diz ere list m8??</legend>
-                </p>
-                <p>
-                    <input type="checkbox" name="jz" id="jazz" required>
-                    <label for="jazz">jazzz!!</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="smjz" id="smjazz" required>
-                    <label for="smjazz">smoot jazzz</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="avjz" id="avjazz" required>
-                    <label for="avjazz">aven guard jaz</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="bbjz" id="bbjazz" required>
-                    <label for="bbjazz">beebooop!!</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="frjz" id="frjazz" required>
-                    <label for="frjazz">freeee! jasssss</label>
-                </p>
-                <p>
-                    <input type="checkbox" name="fujz" id="fujazz" required>
-                    <label for="fujazz">jazz fusion</label>
-                </p>
-            </fieldset>
-            <fieldset>
-                <legend>wazz diz kinda good or smtn??</legend>
-                <p>
-                    <input type="radio" name="yn" id="pos" value="pospos" required>
-                    <label for="pos">Yeeeeee m8, it ws gr8!!</label>
-                </p>
-                <p>
-                    <input type="radio" name="yn" id="ps" value="pos" required>
-                    <label for="ps">me likey!</label>
-                </p>
-                <p>
-                    <input type="radio" name="yn" id="vpos" value="pospospos" required>
-                    <label for="vpos">plzzz mak mor freindo!!!</label>
-                </p>
-                <input type="submit" value="click ere to gib me da infozz n stuffs yo wrote dn!">
-            </fieldset>
-        </form>
+        <main>
+            <form action="advlist.html" method="get">
+                <fieldset>
+                    <legend>who b u?</legend>
+                    <p>
+                        <label for="nam">EYYO?? what yo pref value m8!??</label>
+                        <input type="text" name="nam" id="nam" required>
+                    </p>
+                    <p>
+                        <label for="lastnm">and what do yo ppl be clld?!??</label>
+                        <input type="text" name="lastnm" id="lastnm" required>
+                    </p>
+                    <p>
+                        <label for="mail">i'd like that mail yo got ther to</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </p>
+                    <p>
+                        <label for="gndr">yanno, tht thng wher society liks gendrr? what do yo one be? dnt Evn need on<br></label>
+                        <input type="file" accept=".txt, .exe, .png, .svg, .html, .cs, .rtf, .xml, .pdf, .doc, .docx, audio/*" id="gndr" name="gndr">
+                    </p>
+                    <p>
+                        <label for="pss">oh n yo do want to protecc diz data wit a psswrd!</label>
+                        <input type="password" name="pss" id="pss" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>oyy wat u lik für stuffs?</legend>
+                    <p>
+                        <label for="date">yo! you thr???? ye yo ritin diz form, do ya Celebrate zom date ye??<br></label>
+                        <input type="date" name="date" id="date" required>
+                    </p>
+                    <p>
+                        <label for="tim">also, werd questn but, Wat yo fav time of day???<br></label>
+                        <input type="time" name="tim" id="tim" required>
+                    </p>
+                    <p>
+                        doya lik lik sum kind off genre in diz ere list m8??
+                    </p>
+                    <p>
+                        <input type="checkbox" value="jz" id="jazz" name="jazz" required>
+                        <label for="jazz">jazzz!!</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="smjz" id="smjazz" name="jazz" required>
+                        <label for="smjazz">smoot jazzz</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="avjz" id="avjazz" name="jazz" required>
+                        <label for="avjazz">aven guard jaz</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="bbjz" id="bbjazz" name="jazz" required>
+                        <label for="bbjazz">beebooop!!</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="frjz" id="frjazz" name="jazz" required>
+                        <label for="frjazz">freeee! jasssss</label>
+                    </p>
+                    <p>
+                        <input type="checkbox" value="fujz" id="fujazz" name="jazz" required>
+                        <label for="fujazz">jazz fusion</label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Diz is da Endy thinge ye?</legend>
+                    <p>
+                        wazz diz kinda good or smtn??
+                    </p>
+                    <p>
+                        <input type="radio" name="yn" id="pos" value="vpos" required>
+                        <label for="pos">Yeeeeee m8, it ws gr8!!</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="yn" id="ps" value="pos" required>
+                        <label for="ps">me likey!</label>
+                    </p>
+                    <p>
+                        <input type="radio" name="yn" id="vpos" value="spos" required>
+                        <label for="vpos">plzzz mak mor freindo!!!</label>
+                    </p>
+                    <p>
+                        <input type="submit" value="click ere to gib me da infozz n stuffs yo wrote dn!">
+                    </p>
+                </fieldset>
+            </form>
         </main>
+        <footer>eyyyy tnx for doin diz formy thingy, it wa mad by me!!1 Freja Kans! yee m8!1!!</footer>
     </body>
 </html>
