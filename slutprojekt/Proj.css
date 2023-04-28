@@ -1,0 +1,90 @@
+body{
+    background-color: #00ff00;
+    color: #0000ff;
+    font-family: 'Times New Roman', Times, serif;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 100px 200px 1fr 50px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer";
+    margin: 0px;
+    overflow: hidden;
+}
+
+#sprt{
+    grid-template-rows: 100px 200px 1fr 200px 50px;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "sprt"
+    "footer";
+}
+
+header{
+    grid-area: header;
+    display: block;
+    background-color: #ff00ff;
+    border-bottom: solid;
+    text-align: center;
+}
+
+#sprt nav:last-of-type{
+    grid-area: sprt;
+}
+
+nav ul{
+    height: 200px;
+    padding: 0;
+    margin: 0px;
+    grid-area: nav;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-areas: 
+    "index"
+    "sta"
+    "sub"
+    "us";
+}
+
+nav li a{
+    height: 44px;
+    display: block;
+    background-color: #ff0000;
+    border-style: solid;
+    border-width: 3px;
+    border-left: none;
+    border-right: none;
+    text-align: center;
+    font-size: 40px;
+    text-decoration: none;
+}
+
+nav li a:hover{
+    background-color: #ffff00;
+}
+
+main{
+    display: block;
+    border-style: solid;
+    border-width: 3px;
+    border-left: none;
+    border-right: none;
+    height: calc(100vh - 350px);
+    overflow-y: scroll;
+}
+
+#sprt main{
+    height: calc(100vh - 550px);
+}
+
+footer{
+    display: block;
+    background-color: #ff0000;
+    border-top: solid;
+    font-size: 10px;
+}
