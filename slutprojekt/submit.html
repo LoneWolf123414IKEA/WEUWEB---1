@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang = "en">
+    <head>
+        <meta charset = "utf-8">
+        <title>Index</title>
+        <link rel = "stylesheet" href = "Proj.css">
+    </head>
+    <body>
+        <header>
+           <h1>SportStatsDirect</h1>
+        </header>
+        <nav>
+            <ul>
+                <li><a href = "Index.html">Homepage</a></li>
+                <li><a href = "stat.html">stat</a></li>
+                <li><a href = "submit.html">sub</a></li>
+                <li><a href = "#">us</a></li>
+            </ul>
+        </nav>
+        <main>   
+            <form action="Index.html" method="set">
+                <fieldset>
+                    <legend>Submitter facts</legend>
+                    <p>
+                        <label for="nam">Name:</label>
+                        <input type="text" name="nam" id="nam" required>
+                    </p>
+                    <p>
+                        <label for="mail">E-mail:</label>
+                        <input type="email" name="mail" id="mail" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Submit</legend>
+                    <p>
+                        <label for="sprt">What sport is the submit for?<br></label>
+                        <input type="radio" name="sprt" id="sprt" value="Foot" required>
+                        <label for="sprt">football<br></label>
+                        <input type="radio" name="sprt" id="sprt" value="bas" required>
+                        <label for="sprt">Basketball<br></label>
+                        <input type="radio" name="sprt" id="sprt" value="ten" required>
+                        <label for="sprt">Tenis<br></label>
+                        <input type="radio" name="sprt" id="sprt" value="based" required>
+                        <label for="sprt">Baseball<br></label>
+                    </p>
+                    <p>
+                        <label for="things"><br>i have litterally no idea what any sport does so please write your stats here</label>
+                        <input type="text" name="things" id="things" required>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Thank you</legend>
+                    <p>
+                        <label for="thank">Anything else?</label>
+                        <input type="text" name="shank" id="thank" required>
+                    </p>
+                    <p>
+                        <input type="submit" value="Submit">
+                    </p>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <p> Created by:Pontus Kans Te21b</p>
+        </footer>
+    </body>
+</html>
