@@ -80,6 +80,24 @@ main{
 
 #sprt main{
     height: calc(100vh - 550px);
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    grid-template-areas: 
+    "exp"
+    "tab";
+    overflow-y: scroll;
+}
+
+table{
+    display: block;
+    font-size: 2vh;
+    overflow-x: scroll;
+    border-collapse: collapse;
+}
+
+th, td{
+    border: #0000ff 2px solid;
 }
 
 footer{
