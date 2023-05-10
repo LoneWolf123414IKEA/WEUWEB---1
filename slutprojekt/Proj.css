@@ -1,6 +1,6 @@
 body{
-    background-color: #00ff00;
-    color: #0000ff;
+    background-color: cyan;
+    color: #031655;
     font-family: 'Times New Roman', Times, serif;
     display: grid;
     grid-template-columns: 1fr;
@@ -27,13 +27,18 @@ body{
 header{
     grid-area: header;
     display: block;
-    background-color: #ff00ff;
+    background-color: #00dddd;
+    border-color: #000000aa;
     border-bottom: solid;
     text-align: center;
 }
 
 #sprt nav:last-of-type{
     grid-area: sprt;
+}
+
+nav{
+    grid-area: nav;
 }
 
 nav ul{
@@ -54,7 +59,9 @@ nav ul{
 nav li a{
     height: 44px;
     display: block;
-    background-color: #ff0000;
+    background-color: rgba(100, 100, 100, 10);
+    border-color: #000000aa;
+    color: black;
     border-style: solid;
     border-width: 3px;
     border-left: none;
@@ -69,13 +76,31 @@ nav li a:hover{
 }
 
 main{
-    display: block;
+    grid-area: main;
+    border-color: #000000aa;
     border-style: solid;
     border-width: 3px;
     border-left: none;
     border-right: none;
     height: calc(100vh - 350px);
     overflow-y: scroll;
+
+}
+
+audio{
+    width: 100vw;
+}
+
+ol{
+    padding: 0%;
+}
+
+ol li{
+    display: block;
+}
+
+img{
+    display: none;
 }
 
 #sprt main{
@@ -97,12 +122,82 @@ table{
 }
 
 th, td{
-    border: #0000ff 2px solid;
+    border: #000000aa 2px solid;
 }
 
 footer{
+    grid-area: footer;
     display: block;
-    background-color: #ff0000;
+    background-color: #00dddd;
+    border-color: #000000aa;
     border-top: solid;
     font-size: 10px;
+}
+
+@media screen and (min-width: 1000px) {
+    body{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 1fr 50px;
+        grid-template-areas: 
+        "header header"
+        "nav nav"
+        "main main"
+        "footer footer";
+    }
+    #sprt{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 100px 100px 1fr 50px;
+        grid-template-areas: 
+        "header header"
+        "nav sprt"
+        "main main"
+        "footer footer";
+    }
+    
+
+    nav ul{
+        height: 100px;
+        padding: 0;
+        margin: 0px;
+        grid-area: nav;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: 
+        "index sta"
+        "sub us";
+    }
+    
+    img{
+        display: block;
+        width: 50vw;
+        height: 50vh;
+        object-fit: contain;
+    }
+
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        height: calc(100vh - 250px);
+    }
+
+    #sprt main{
+        height: calc(100vh - 250px);
+        overflow-y: scroll;
+        overflow-x: hidden;
+    }
+
+    #frm{
+        display: block;
+    }
+
+    ol{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr;
+        overflow: visible;
+    }
 }
