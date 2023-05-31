@@ -59,7 +59,7 @@ nav ul{
 nav li a{
     height: 44px;
     display: block;
-    background-color: rgba(100, 100, 100, 10);
+    background-color: rgba(100, 100, 100, 1);
     border-color: #000000aa;
     color: black;
     border-style: solid;
@@ -97,6 +97,7 @@ ol{
 
 ol li{
     display: block;
+    text-decoration: none;
 }
 
 img{
@@ -199,5 +200,12 @@ footer{
         grid-template-columns: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
         overflow: visible;
+    }
+    table{
+        width: 100vw;
+    }
+
+    tr{
+        width: 100vw;
     }
 }
